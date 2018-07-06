@@ -1,0 +1,52 @@
+body {background-color: light green;}
+H1 {display:inline;
+}
+#term {
+        width:  200px;
+        height: 500px;
+        marign: 1px;
+        border: solid black;
+        float: left;
+}
+#term2 {
+        width: 800px;
+        height: 300px;
+        margin: 1px;
+ }
+#term3 {
+        width: 800px;
+        height: 190px;
+        float:  left;
+}
+#term4 {
+        width: 300px;
+        height: 500px;
+        float:  right;
+}
+#div1 {
+        width: 180px;
+        height: 234px;
+        border: solid green;
+        float: left;
+        margin: 5px;
+}
+#div2 {
+        margin: 0px 545px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 15px;
+    height: 15px;
+}
+.button5 {border-radius: 50%; float: left;}
+.button6 {border-radius: 50%;float: right;
+}
