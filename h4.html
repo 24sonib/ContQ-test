@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <head>
 <title>H4.HTML</title>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="h4.css"></link>
 </head>
 <body>
-<div><button class="button button5"></button>
-<button class="button button5"></button>
-<button class="button button5"></button>
-
+<div class="container">
+        <div class="row">
+<div class="col-sm">
+<button class="button button5 bg-warning text-white"></button>
+<button class="button button5 bg-danger text-white"></button>
+<button class="button button5 bg-primary text-white"></button>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Profile</a>
+  <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="button button6"></button> </span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="button button6 bg-warning text-white"></button> </span>
 
 <script>
 function openNav() {
@@ -28,11 +36,12 @@ function closeNav() {
 }
 </script>
 
-<button class="button button6"></button>
-<button class="button button6"></button>
-<h1 id="div2">ContQ</h1>
+<button class="button button6 bg-danger text-white"></button>
+<button class="button button6 bg-primary text-white"></button>
+<h1 id="div2" class="bg-info text-white">ContQ</h1>
 </div>
-
+</div>
+</div>
 <div id="term">
 <iframe id="div1" src="http://localhost/service_list_checkbox.html"></iframe>
 <iframe id="div1" src="http://localhost/ps_list_filter.php"></iframe>
@@ -40,5 +49,11 @@ function closeNav() {
 <iframe id="term2" src="https://localhost:4200/"></iframe>
 <iframe id="term4" src="http://localhost/ps_list.php"></iframe>
 <iframe id="term3" src="http://localhost:4202/"></iframe>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
