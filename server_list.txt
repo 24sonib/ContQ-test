@@ -1,0 +1,6 @@
+apache2
+php7
+mariadb-server
+postfix-server : (Configure Postfix to use Gmail as a Mail Relay (https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/))
+
+shellinabox

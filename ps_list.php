@@ -1,6 +1,6 @@
 <?php
 echo "<pre>";
-echo '<h4 style="color:green">';
+echo '<h4 style="color:white">';
 echo "<b><center>process</center></b>";
 sleep(8);
 echo shell_exec('sudo docker ps');

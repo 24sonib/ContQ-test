@@ -1,18 +1,18 @@
 #main {
 	
-	background-color:    #81a55e    ;
+	background-color:    #100    ;
 	width: 300px;
 	height: 180px;
 	margin: 50px 500px;	
 }
 #Sdiv1 { 
-	color: black; 
+	color: white; 
 	width:250px; 
 	height:350px;
 }
 #Sdiv2 {
 	border: solid black;
-	color:  black ;
+	color:  white ;
 }
 .button {
 	border: solid green;

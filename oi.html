@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+<title>H4.HTML</title>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="h4.css"></link>
+</head>
+<body  style="background: #000;">
+<style>
+p.speech {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+p.thought {
+  position: relative;
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 58px;
+  -moz-border-radius: 58px;
+  border-radius: 58px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+p.thought:before, p.thought:after {
+  left: 10px;
+  top: 70px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+}
+
+p.thought:after {
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  top: 100px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}
+</style>
+  <div class="row">
+<div class="col-sm">
+<p class="speech">SitePoint Rocks!</p>
+<button class="button button5 bg-warning text-white"></button>
+<button class="button button5 bg-danger text-white"></button>
+<button class="button button5 bg-primary text-white"></button>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="button button6 bg-warning text-white"></button> </span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<button class="button button6 bg-danger text-white"></button>
+<button class="button button6 bg-primary text-white"></button>
+<h1 id="div2" class="bg-info text-white">ContQ</h1>
+</div>
+</div>
+</div>
+<div id="term">
+<iframe style="background: #100;" id="div1"  src="http://localhost/ContQ/ContQ-test/service_list_checkbox.html"></iframe>
+<iframe style="background: #100;" id="div1" src="http://localhost/ContQ/ContQ-test/ps_list_filter.php"></iframe>
+</div>
+<iframe id="term2" src="https://localhost:4200/"></iframe>
+<iframe style="background: #100;" id="term4" src="http://localhost/ContQ/ContQ-test/ps_list.php"></iframe>
+<iframe id="term3" src="http://localhost/ContQ/ContQ-test/feature_detail_file.html"></iframe>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

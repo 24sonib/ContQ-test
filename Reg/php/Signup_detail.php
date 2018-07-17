@@ -6,10 +6,10 @@ $emailaddress = $_POST['e'];
 
 if (preg_match($pattern, $emailaddress) === 1) {
     // emailaddress is valid
-echo "<body bgcolor='#b1d48e'>";
+echo "<body bgcolor='#100' style='color: white'>";
 echo $emailaddress . "<br/>";
 echo "Thank you For Registration! We send the detail to your mail Please check mail and Subscribe and visit below  link";
-echo "<a href=http://localhost/ContQ/Reg/login.html>Login Page</a>";
+echo "<a href=http://localhost/ContQ/ContQ-test/Reg/login.html>Login Page</a>";
 echo "</body>";
 }
 else {

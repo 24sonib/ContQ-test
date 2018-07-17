@@ -11,6 +11,6 @@ if (!$conn)
 {
 die('conn failed' . mysql_error());
 }
-echo 'Connection Success';
+echo '<h1 style="color: white"> Connection Success </h1>';
 ?>
 

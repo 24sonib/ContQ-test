@@ -1,11 +1,36 @@
 body {background-color: light green;}
-H1 {display:inline;
+H1 {	display: inline;}
+
+/*
+.container {
+    display: inline-block;
+    cursor: pointer;
 }
+*/
+.bar1, .bar2, .bar3 {
+    width: 50px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 
 #term {
         width:  200px;
         height: 500px;
-        margin: 1px;	
 	border: solid black;
 	float: left;
 }
@@ -13,7 +38,7 @@ H1 {display:inline;
         width: 61.925%;
         height: 300px;
         margin: 1px;
-	background: #333;
+	background: #111;
  }
 #term3 {
         width: 61.925%;
@@ -24,17 +49,27 @@ H1 {display:inline;
 #term4 {
 	width: 300px;
         height: 500px;
-        float:  right;
+	float: right;
+	border: solid black;
 }
 #div1 {
         width: 180px;
         height: 234px;
         float: left;
         margin: 5px;
+	display: inline;
 }
 #div2 {
         margin: 0px 520px;
 	text-shadow: 3px 2px red;
+}
+
+#div3 {
+        display: inline;
+        width: 180px;
+        height: 234px;
+        float: left;
+	margin-top: 5px;
 }
 
 .button {
@@ -93,3 +128,105 @@ H1 {display:inline;
   .sidenav a {font-size: 18px;}
 }
 
+/* tooltip for imformation*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 10%;
+}
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    -webkit-transform: rotate(180deg);
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -220%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    -webkit-transform: rotate(180deg);
+
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.bs-example{
+            margin: 0px 0px;
+        }

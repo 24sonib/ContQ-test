@@ -1,6 +1,6 @@
 <?php
 echo "<pre>";
-echo '<h4 style="color: green">';
+echo '<h4 style="color: white">';
 echo "<b><center>Container-ID</center></b>";
 sleep(8);
 //while(true){
