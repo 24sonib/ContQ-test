@@ -24,17 +24,28 @@
 <!--
 <img  src="nav2.png" style=" width: 60px; height: 60px; margin: .408% 25px; float: right; "></img>
 -->
-
-<div style=" margin: .408% 30px; float: right;" onclick="myFunction(this)">
+<div class="dropdown"  style=" margin: .408% 30px; float: right;">
+<div  class="dropbtn" onclick="myFunction(this)">
 <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 </div>
+
+<div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
 </div>
 <script>
 function myFunction(x) {
     x.classList.toggle("change");
+
+   /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+    document.getElementById("myDropdown").classList.toggle("show");
 }
+
 </script>
 
 
@@ -152,7 +163,7 @@ function closeNav() {
 <iframe style="background: #111;" id="div1" src="http://localhost/ContQ/ContQ-test/ps_list_filter.php"></iframe>
 </div>
 <iframe id="term2" src="https://localhost:4200/"></iframe>
-<div id="term4"><iframe style="background: #111;" id="div3" src="http://localhost/ContQ/ContQ-test/ps_list.php"></iframe></div>
+<div id="term4" ><iframe style="background: #111;" id="div3" src="http://localhost/ContQ/ContQ-test/ps_list.php"></iframe></div>
 
 <iframe id="term3" src="http://localhost/ContQ/ContQ-test/feature_detail_file.html"></iframe>
 
